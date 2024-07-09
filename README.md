@@ -28,3 +28,20 @@ You will also need an API key from https://console.anthropic.com/. Go there to s
 export ANTHROPIC_API_KEY="your_api_key_here"
 ```
 
+## Data Source
+
+The data source is a CSV file on disk at `data/bookings.csv`. The bot will have access to this file, and will be able to modify it.
+
+The data shows which tables / times are available (if free), or the name of whoever has booked that slot.
+
+Here's an example of the data.
+
+Here's the table expressed as markdown, truncated to 4 columns and 4 rows:
+
+| time  | table1 (2p) | table2 (2p) | table3 (2p) |
+| ----- | ----------- | ----------- | ----------- |
+| 12:00 |             | Jones       |             |
+| 12:30 | Anderson    | Liam H      | Jackson K   |
+| 13:00 | Li          | Patel       | Johnson     |
+| 13:30 | Martin      |             |             |
+
