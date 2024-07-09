@@ -1,0 +1,18 @@
+{
+  "name": "get_booking_slots",
+  "description": "Retrieves available booking slots for a restaurant within 1 hour of the specified time. The function considers the party size and returns available tables that can accommodate the group. It should be used when a user wants to find available restaurant reservations for a specific party size around a certain time. The tool will return a list of available slots, each containing the party size, time, and table information.",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "party_size": {
+        "type": "integer",
+        "description": "The number of people in the party. Must be a positive integer."
+      },
+      "time": {
+        "type": "string",
+        "description": "The desired booking time in 24-hour format, e.g., '18:30' for 6:30 PM."
+      }
+    },
+    "required": ["party_size", "time"]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "book_table",
+  "description": "Books a table at the restaurant for a specific time and under a given name. This function checks the availability of the requested table and time in the restaurant's booking system. If the slot is available, it updates the booking record and returns a success status. If the slot is already booked or doesn't exist, it returns a failure status.",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "table_name": {
+        "type": "string",
+        "description": "The name of the table to book, including its size, e.g., 'table1 (2p)' for a 2-person table."
+      },
+      "time": {
+        "type": "string",
+        "description": "The desired booking time in 24-hour format, e.g., '18:30' for 6:30 PM."
+      },
+      "reservation_name": {
+        "type": "string",
+        "description": "The name under which the reservation should be made."
+      }
+    },
+    "required": ["table_name", "time", "reservation_name"]
+  }
+}
