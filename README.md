@@ -63,3 +63,12 @@ def get_booking_slots(party_size: int, time: str):
 def book_table(table_name: str, time: str, reservation_name: str) -> bool:
     # Show an input prompt so the user can chat / enter information.
 ```
+## Booking Bot Implementation
+
+The actual bot (using the tool) is implemented in `booking_bot.py`. It is structured to continue prompting and responding to the user in a loop (until the booking is made, or cancelled).
+
+It can be used like this:
+
+```sh
+python booking_bot.py
+```
