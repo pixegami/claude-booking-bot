@@ -45,3 +45,21 @@ Here's the table expressed as markdown, truncated to 4 columns and 4 rows:
 | 13:00 | Li          | Patel       | Johnson     |
 | 13:30 | Martin      |             |             |
 
+## Available Tools
+
+The tools will be implemented as separate Python functions. We will have three tools.
+
+```python
+def ask_user(input_prompt: str) -> str:
+    # Show an input prompt so the user can chat / enter information.
+```
+
+```python
+def get_booking_slots(party_size: int, time: str):
+    # Which tables (of "party size") are free near the desired time (e.g. 9:30)?
+```
+
+```python
+def book_table(table_name: str, time: str, reservation_name: str) -> bool:
+    # Show an input prompt so the user can chat / enter information.
+```
