@@ -21,6 +21,8 @@ book_table_schema = load_schema("tools/schema/book_table.json")
 def use_tool(tool_use_content: ToolUseBlock) -> dict:
     """Helper function to use the correct tool based on the tool_use_content."""
 
+    print(f"Tool use Block: {tool_use_content}")
+
     tools_map = {
         "ask_user": ask_user,
         "get_booking_slots": get_booking_slots,
